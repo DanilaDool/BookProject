@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    position: fixed; /* Фиксируем хедер */
+    top: 0;
+    left: 0;
+    width: 100%; /* На всю ширину экрана */
+    background-color: black;
+    color: white;
+    z-index: 1000; /* Поверх других элементов */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+header .container {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 60px; /* Высота для видимости */
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+}
+
+nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    background-image: url('public/2025-04-02 18.27.40.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    height: 700px;
+}
+
+.hero img {
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.program, .examples, .info, .testimonials {
+    padding: 2rem;
+    text-align: center;
+}
+
+.programm-text1 {
+    margin-bottom: 10px;
+}
+
+.programm-text2 {
+    margin-bottom: 10px;
+}
+
+.program-button {
+    width: 100px;
+}
+
+.programm-name {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.gallery, .reviews {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
