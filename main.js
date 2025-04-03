@@ -1,8 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll("button");
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            alert("Функция в разработке");
-        });
-    });
-});
+// function ShowReviews() {
+//     document.addEventListener("DOMContentLoaded", () => {
+//         document.getElementsByClassName("reviews").style.dispaly = 'flex']
+//     });
+//
+// }

@@ -110,10 +110,161 @@ button:hover {
     gap: 1rem;
 }
 
+.gallery img {
+    border-radius: 10px;
+}
+
+.reviews {
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    margin: 20px auto; /* Центрируем блок по горизонтали */
+    text-align: center;
+}
+
+#name-block {
+    height: 200px;
+}
+
+.trip {
+    background-color: black;
+    height: 3px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.show {
+    display: flex; /* Показываем блок при нажатии */
+}
+
+
 footer {
+    position: relative;
     background-color: black;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+.social-link {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Центрируем по вертикали относительно футера */
+    display: flex;
+    align-items: center;
+
+}
+
+.social-link svg {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+
+.reviews-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 100%;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 300px;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 500px;
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.stars {
+    font-size: 20px;
+    color: gold;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column; /* Карточки в колонку */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Почти на всю ширину экрана */
+    }
+
+    .programm-name {
+        font-size: 20px;
+    }
+
+    .programm-text1, .programm-text2 {
+        font-size: 16px;
+    }
+
+    .program-button {
+        font-size: 16px;
+    }
+}
+
+/* 📱 Планшеты (600px - 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%; /* Две карточки в строке */
+    }
+
+    .programm-name {
+        font-size: 22px;
+    }
 }
