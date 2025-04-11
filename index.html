@@ -22,27 +22,31 @@
 <!-- Program Section -->
 <section class="program">
     <h2 class="programm-name">Наши Программы</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="public/IMAGE 2025-04-03 15:00:19.jpg" width="200px" height="300px">
-            <h4 class="programm-text1">Книга для повышения роста</h4>
-            <p class="programm-text2">1000₽</p>
-            <button class="program-button">Купить</button>
+    <div class="cards-wrapper">
+        <div class="cards-row">
+            <div class="card">
+                <img src="public/IMAGE 2025-04-03 15:00:19.jpg" alt="Рост" class="program-image">
+                <h4 class="programm-text1">Книга для повышения роста</h4>
+                <p class="programm-text2">1000₽</p>
+                <button class="program-button">Купить</button>
+            </div>
+            <div class="card">
+                <img src="public/IMAGE 2025-04-03 15:00:40.jpg" alt="Масса" class="program-image">
+                <h4 class="programm-text1">Книга для набора массы</h4>
+                <p class="programm-text2">1000₽</p>
+                <button class="program-button">Купить</button>
+            </div>
         </div>
-        <div class="card">
-            <img src="public/IMAGE 2025-04-03 15:00:40.jpg" width="200px" height="300px">
-            <h4 class="programm-text1">Книга для набора массы</h4>
-            <p class="programm-text2">1000₽</p>
-            <button class="program-button">Купить</button>
-        </div>
-        <div class="card">
-            <img src="public/IMAGE 2025-04-03 15:00:50.jpg" width="450px" height="300px">
+        <div class="card big-card">
+            <img src="public/IMAGE 2025-04-03 15:00:50.jpg" alt="Рост + масса" class="program-image">
             <h4 class="programm-text1">Книга для повышения роста + Книга для набора массы</h4>
             <p class="programm-text2">1500₽</p>
             <button class="program-button">Купить</button>
         </div>
     </div>
 </section>
+
+
 
 <!-- Information Section -->
 <section class="info">
@@ -63,16 +67,28 @@
     <p style="margin-top: 10px;"><strong>Must be Perfect</strong> — это больше, чем книги. Это ваша уверенность в том, что совершенство достижимо. Начните свой путь к идеальному телу уже сегодня!</p>
 </section>
 
-<!-- Examples Section -->
 <section class="examples">
     <h3 style="margin-bottom: 20px;">Примеры результатов по нашей программе</h3>
     <div class="gallery">
-        <img src="https://zozhnik.ru/wp-content/uploads/2019/11/32_%D0%95%D0%9A%D0%90%D0%A2%D0%95%D0%A0%D0%98%D0%9D%D0%90-1024x1024.jpg" width="300px" height="200px" alt="Example 1">
-        <img src="https://f.mixsport.pro/photo/20130/7T7YZ.jpg" width="300px" height="200px" alt="Example 2">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8matWkJlKBDcsef29u_c9zLPqh50qvLumA&s" width="300px" height="200px" alt="Example 3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8matWkJlKBDcsef29u_c9zLPqh50qvLumA&s" width="300px" height="200px" alt="Example 3">
+        <div class="image-container">
+            <img src="https://zozhnik.ru/wp-content/uploads/2019/11/32_%D0%95%D0%9A%D0%90%D0%A2%D0%95%D0%A0%D0%98%D0%9D%D0%90-1024x1024.jpg" alt="Example 1">
+        </div>
+        <div class="image-container">
+            <img src="https://f.mixsport.pro/photo/20130/7T7YZ.jpg" alt="Example 2">
+        </div>
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8matWkJlKBDcsef29u_c9zLPqh50qvLumA&s" alt="Example 3">
+        </div>
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8matWkJlKBDcsef29u_c9zLPqh50qvLumA&s" alt="Example 4">
+        </div>
+        <div class="overlay" id="overlay">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img id="overlayImage" src="" alt="Увеличенное изображение">
+        </div>
     </div>
 </section>
+
 
 <!-- Testimonials -->
 <section class="reviews-section">
@@ -80,57 +96,92 @@
     <div class="reviews-container">
         <div class="review-card">
             <div class="review-header">
-                <h4>Александр Иванов</h4>
+                <h4>Никита</h4>
                 <div class="stars">★★★★★</div>
             </div>
-            <p>Книга помогла мне увеличить рост на 5 см за полгода! Очень доволен результатом!</p>
+            <p>Меня всегда беспокоил рост, и комплексов хватало. Эта книга дала не только методику, но и веру в результат. Спасибо Must be Perfect!</p>
         </div>
 
         <div class="review-card">
             <div class="review-header">
-                <h4 class="text-testimonials">Мария Петрова</h4>
+                <h4 class="text-testimonials">Кирилл</h4>
                 <div class="stars">★★★★☆</div>
             </div>
-            <p>После применения методики масса увеличилась на 7 кг за три месяца. Рекомендую!</p>
+            <p>После применения новых техник для упражнений масса увеличилась на 7 кг за три месяца. Рекомендую!</p>
         </div>
 
         <div class="review-card">
             <div class="review-header">
-                <h4>Дмитрий Смирнов</h4>
+                <h4>Дмитрий</h4>
                 <div class="stars">★★★★★</div>
             </div>
-            <p>Отличная методика, результаты впечатляют! Тело стало более рельефным и сильным.</p>
+            <p>Долго искал, где всё по делу. В этой книге — именно то, что нужно: от упражнений до витаминов. Видно, что автор сам прошёл через это и делится опытом честно.</p>
         </div>
         <div class="review-card">
             <div class="review-header">
-                <h4 class="text-testimonials">Мария Петрова</h4>
+                <h4 class="text-testimonials">Алексей</h4>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <p>Не хватило объяснений почему работают те или иные шаги. Иногда создавалось ощущение, что просто следуешь инструкции вслепую. А ещё некоторые советы показались слишком универсальными — всё-таки рост и масса сильно зависят от генетики</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <h4>Антон</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+            <p>Не ожидал, что книга даст такие понятные и чёткие рекомендации. Следую уже третью неделю — набрал почти 4 кг и чувствую себя гораздо энергичнее.</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <h4>Роман</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+            <p>Сильно понравилось, что автор не обещает чудес, а даёт чёткий план. Всё логично, по делу. У меня уже +2 кг за 2 недели и прибавка в росте — около 1 см.</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <h4>Артем</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+            <p>Очень доволен! Книга реально помогает. Уже заметил, что рост немного увеличился.</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <h4>Максим</h4>
                 <div class="stars">★★★★☆</div>
             </div>
-            <p>После применения методики масса увеличилась на 7 кг за три месяца. Рекомендую!</p>
-        </div>
-
-        <div class="review-card">
-            <div class="review-header">
-                <h4>Дмитрий Смирнов</h4>
-                <div class="stars">★★★★★</div>
-            </div>
-            <p>Отличная методика, результаты впечатляют! Тело стало более рельефным и сильным.</p>
+            <p>Очень крутая книга! Всё понятно и доступно. Мне нравится, что в ней нет воды, а только конкретика.</p>
         </div>
         <div class="review-card">
             <div class="review-header">
-                <h4>Александр Иванов</h4>
+                <h4>Руслан</h4>
                 <div class="stars">★★★★★</div>
             </div>
-            <p>Книга помогла мне увеличить рост на 5 см за полгода! Очень доволен результатом!</p>
+            <p>Действительно стоит своих денег. Я за месяц смог набрать пару сантиметров в росте и массу.</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <h4>Данила</h4>
+                <div class="stars">★★★☆☆</div>
+            </div>
+            <p>Идея хорошая, дает хорошую базу, но хотелось бы больше практических примеров и фотографий</p>
         </div>
     </div>
+
+    <section class="review-counter-section">
+        <h2>Довольных клиентов которые оценили нас в Telegram</h2>
+        <div class="counter" id="reviewCounter">0</div>
+        <h4 style="color: black;">Уже сейчас ты можешь присоединиться к нам и улучшить свою жизнь</h4>
+    </section>
+
 </section>
 
 
 
 <!-- Footer -->
 <footer>
-    <p style="color: white">© 2025 Must be Perfect.ru</p>
+    <p style="color: white; margin-bottom: 20px;">© 2025 Must be Perfect.ru</p>
     <div class="social-link">
         <a>
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">

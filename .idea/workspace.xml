@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94042147-ae55-4cb2-af1d-0a60724d889e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/IMAGE 2025-04-03 15:00:19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/IMAGE 2025-04-03 15:00:40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/IMAGE 2025-04-03 15:00:50.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
@@ -32,6 +29,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -71,7 +69,9 @@
       <workItem from="1743606033956" duration="8466000" />
       <workItem from="1743672495599" duration="755000" />
       <workItem from="1743681480617" duration="9138000" />
-      <workItem from="1743698004013" duration="2019000" />
+      <workItem from="1743698004013" duration="2622000" />
+      <workItem from="1744049973415" duration="1342000" />
+      <workItem from="1744299541986" duration="9003000" />
     </task>
     <servers />
   </component>
