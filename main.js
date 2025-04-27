@@ -55,7 +55,7 @@ document.addEventListener('keydown', (e) => {
     const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
     if (entry.isIntersecting && !hasAnimated) {
-    animateCounter("reviewCounter", 1273, 2000);
+    animateCounter("reviewCounter", 13, 2000);
     hasAnimated = true;
     observer.unobserve(target);
 }

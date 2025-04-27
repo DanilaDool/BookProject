@@ -71,7 +71,8 @@ nav a {
 }
 
 .program-button {
-    width: 100px;
+    height: 40px;
+    width: 100%;
 }
 
 .programm-name {
@@ -117,25 +118,27 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: black solid 1px;
 }
 
 .big-card {
     width: 620px;
 }
 
-
-
 button {
-    background-color: #2563eb;
+    background-color: #FD292F;
     color: white;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.5s;
+    width: 80%;
 }
 
+
 button:hover {
-    background-color: #1d4ed8;
+    background-color: #B20000;
 }
 
 .gallery, .reviews {
@@ -164,8 +167,8 @@ button:hover {
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 200px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -253,21 +256,25 @@ footer p {
 }
 
 .social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 15px;
+     flex-wrap: wrap;
+ }
 
 
 .social-link svg {
     margin-left: 5px;
     margin-right: 10px;
+    transition: color 0.3s ease;
+    color: white;  /* Начальный цвет */
 }
 
 
-
+.social-link svg:hover {
+    color: #9da2ab;
+}
 
 
 .reviews-section {
@@ -349,32 +356,6 @@ p {
     color: black;
 }
 
-
-
-
-@media (max-width: 600px) {
-    .cards {
-        flex-direction: column; /* Карточки в колонку */
-        align-items: center;
-    }
-
-    .card {
-        width: 90%; /* Почти на всю ширину экрана */
-    }
-
-    .programm-name {
-        font-size: 20px;
-    }
-
-    .programm-text1, .programm-text2 {
-        font-size: 16px;
-    }
-
-    .program-button {
-        font-size: 16px;
-    }
-}
-
 /* 📱 Планшеты (600px - 900px) */
 @media (min-width: 600px) and (max-width: 900px) {
     .cards {
@@ -391,20 +372,44 @@ p {
     }
 }
 @media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .image-container {
         max-width: 90%;
+        display: flex;
+        justify-content: center;
     }
-}
-@media (max-width: 600px) {
-    .card {
-        width: 90%;
+
+    .image-container img {
+        width: 250px;
+        height: 200px;
     }
 
     .cards {
         flex-direction: column;
         align-items: center;
     }
+
+    .card {
+        width: 90%;
+    }
+
+    .programm-name {
+        font-size: 20px;
+    }
+
+    .programm-text1, .programm-text2 {
+        font-size: 16px;
+    }
+
+    .program-button {
+        font-size: 16px;
+    }
 }
+
 @media (max-width: 650px) {
     .social-link {
         margin-top: 0.5rem;
